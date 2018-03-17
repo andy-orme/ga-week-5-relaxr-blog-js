@@ -1,6 +1,8 @@
 $(function() {
 	// prevent default behaviour of "a" tags
-
+	$("a").click(function(e) {
+		e.preventDefault();
+	});
 	// user clicks ".readmore"
 		// "<p>" slides down
 		// "read less" shows
