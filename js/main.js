@@ -17,21 +17,19 @@ $(function() {
 	$(".readless").on("click", function() {
 		// "<p>" slides up
 		$("#show-this-on-click").slideUp().hide();
-		// "read more" shows
-		$(this).hide();
 		// "read less" hides
+		$(this).hide();
+		// "read more" shows
 		$(".readmore").show();
 	});
 		
 	// user clicks ".learnmore"
+	$(".learnmore").on("click", function() {
 		// "<span>" slides down
-		// "hide" shows
+		$("#learnmoretext").slideDown().show();
 		// "learn more" hides
-
-	// user clicks ".hide"
-		// "<span>" slides up
-		// "learn more" shows
-		// "hide" hides
+		$(this).hide();
+	});
 });
 
 
